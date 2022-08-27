@@ -1,6 +1,22 @@
-<header>
-  <h3>Hi there!</h3>
-  <p>Welcome to Artsite</p>
-</header>
+<nav class="navbar">
+  <ul>
+    <li (click) = "goToHome()">
+      <a>Home</a>
+    </li>
+    <li (click) = "goToGallery()">
+      <a>Gallery</a>
+    </li>
+    <li (click) = "goToAbout()">
+      <a>About</a>
+    </li>
+    <li (click) = "goToContact()">
+      <a>Contact</a>
+    </li>
+  </ul>
+</nav>
 
-<router-outlet></router-outlet>
+<div class="main-content">
+  <h3 #font>Hi there!</h3>
+  <p>Welcome to Artsite</p>
+  <router-outlet></router-outlet>
+</div>
