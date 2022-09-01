@@ -13,6 +13,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { LazyImgDirective } from './lazy-img.directive';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBiR76nGZ4Jg0XKqytCYaICxU0iTlYbrsE",
@@ -31,7 +32,8 @@ const firebaseConfig = {
     GalleryComponent,
     GalleryCardComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LazyImgDirective
   ],
   imports: [
     BrowserModule,
